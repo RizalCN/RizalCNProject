@@ -1,6 +1,7 @@
 const projects = [
   {
     title: "NieR:Automata",
+    slug: "nier-automata",
     type: "Translation",
     platform: ["PC"],
     status: "Dalam pengembangan",
@@ -9,6 +10,7 @@ const projects = [
   },
   {
     title: "Final Fantasy XV",
+    slug: "final-fantasy-xv",
     type: "Translation",
     platform: ["PC"],
     status: "Dalam pengembangan",
@@ -17,6 +19,7 @@ const projects = [
   },
   {
     title: "Sword and Fairy 7",
+    slug: "sword-and-fairy-7",
     type: "Translation / Mod",
     platform: ["PC"],
     status: "Eksperimental",
@@ -25,6 +28,7 @@ const projects = [
   },
   {
     title: "Project Android",
+    slug: "project-android",
     type: "Mod",
     platform: ["Android"],
     status: "Segera",
@@ -33,6 +37,7 @@ const projects = [
   },
   {
     title: "Project PS4",
+    slug: "project-ps4",
     type: "Translation",
     platform: ["PS4"],
     status: "Rencana",
@@ -41,6 +46,7 @@ const projects = [
   },
   {
     title: "Project PS5",
+    slug: "project-ps5",
     type: "Mod",
     platform: ["PS5"],
     status: "Rencana",
@@ -77,7 +83,7 @@ function renderProjects() {
   });
 
   projectGrid.innerHTML = result.map(p => `
-    <article class="card">
+    <article class="card clickable-card" onclick="location.href='detail-${p.slug}.html'">
       <div class="card-cover">${p.symbol}</div>
       <div class="card-body">
         <div class="badges">
@@ -87,7 +93,7 @@ function renderProjects() {
         <h3>${p.title}</h3>
         <p>${p.description}</p>
         <div class="card-footer">
-          <span>${p.status}</span><span>Detail →</span>
+          <span>${p.status}</span><span class="detail-link">Detail →</span>
         </div>
       </div>
     </article>
