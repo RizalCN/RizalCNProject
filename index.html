@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RizalCNProject - Portal game, mod, terjemahan Indonesia, tools, dan tutorial.">
+  <title>RizalCNProject — Game • Mod • Translation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">
+        <span class="brand-mark">RC</span>
+        <span>RizalCNProject</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Buka menu">☰</button>
+      <nav id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#mods">Mods</a>
+        <a href="#translation">Translation</a>
+        <a href="#tools">Tools</a>
+        <a href="#tutorials">Tutorials</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">GAME • MOD • TRANSLATION • TOOLS</p>
+          <h1>Game lebih mudah<br><span>dimainkan dalam Bahasa Indonesia.</span></h1>
+          <p class="hero-text">
+            Portal RizalCNProject untuk proyek terjemahan game, mod, tools localization,
+            dan tutorial modding.
+          </p>
+          <div class="search-box">
+            <span>⌕</span>
+            <input id="searchInput" type="search" placeholder="Cari game, mod, tools, atau artikel...">
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-top">RIZALCNPROJECT</div>
+          <div class="hero-symbol">✦</div>
+          <p>Indonesian Game Localization</p>
+          <small>Projects • Mods • Translation • Tools</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">PORTAL</p>
+            <h2>Project terbaru</h2>
+          </div>
+          <div class="filters" id="filters">
+            <button class="filter active" data-filter="all">Semua</button>
+            <button class="filter" data-filter="PC">PC</button>
+            <button class="filter" data-filter="PS4">PS4</button>
+            <button class="filter" data-filter="PS5">PS5</button>
+            <button class="filter" data-filter="Android">Android</button>
+          </div>
+        </div>
+        <div class="card-grid" id="projectGrid"></div>
+        <p class="empty" id="emptyProjects">Tidak ada hasil yang cocok.</p>
+      </div>
+    </section>
+
+    <section class="section alt" id="mods">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">MOD</p>
+            <h2>Mod & patch</h2>
+          </div>
+        </div>
+        <div class="info-grid">
+          <article class="info-card">
+            <span class="icon">⬇</span>
+            <h3>Download</h3>
+            <p>Tempat untuk menyimpan patch, mod, dan file pendukung proyek.</p>
+          </article>
+          <article class="info-card">
+            <span class="icon">⚙</span>
+            <h3>Installation</h3>
+            <p>Setiap proyek nantinya memiliki panduan pemasangan yang jelas.</p>
+          </article>
+          <article class="info-card">
+            <span class="icon">✓</span>
+            <h3>Changelog</h3>
+            <p>Versi dan perubahan proyek dicatat agar mudah diikuti.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="translation">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">INDONESIAN</p>
+            <h2>Translation</h2>
+          </div>
+        </div>
+        <div class="translation-box">
+          <div>
+            <span class="status-dot"></span>
+            <strong>Fokus utama</strong>
+            <p>Terjemahan game dan localization Bahasa Indonesia.</p>
+          </div>
+          <div class="translation-stat"><strong>Game</strong><span>Localization</span></div>
+          <div class="translation-stat"><strong>Mods</strong><span>Community</span></div>
+          <div class="translation-stat"><strong>Tools</strong><span>Open workflow</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="tools">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">TOOLS</p>
+            <h2>Tools localization</h2>
+          </div>
+        </div>
+        <div class="card-grid" id="toolGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="tutorials">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">KNOWLEDGE</p>
+            <h2>Tutorial terbaru</h2>
+          </div>
+        </div>
+        <div class="article-grid" id="articleGrid"></div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container about-inner">
+        <div>
+          <p class="eyebrow">ABOUT</p>
+          <h2>RizalCNProject</h2>
+        </div>
+        <p>
+          RizalCNProject adalah portal pribadi untuk berbagi proyek game localization,
+          mod, tools, dan tutorial. Konten akan ditambahkan secara bertahap.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><strong>RizalCNProject</strong><br><span>Game • Mod • Translation • Tools</span></div>
+      <div>© 2026 RizalCNProject</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
